@@ -1,0 +1,78 @@
+/* Font variables */
+/* Color variables */
+/* Transition variables */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  decoration-text: none;
+}
+
+section {
+  padding: 40px 0;
+}
+
+.jumbotron {
+  margin: 40px auto;
+  width: 100%;
+  height: 100vh;
+  padding-top: 40px;
+  background: url("../images/iStock-847375436.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.navbar {
+  border: none;
+}
+
+.navbar .logo-large, .navbar .logo-small {
+  padding: 10px;
+}
+
+.navbar .logo-large h4, .navbar .logo-small h4 {
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 1px solid;
+}
+
+.navbar .logo-large p, .navbar .logo-small p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.button {
+  padding-top: 20px;
+  line-height: 30px;
+  color: #696969;
+}
+
+.button:hover {
+  background-color: #FF0000;
+  transition: all 0.4s ease;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .logo-large {
+    display: block;
+  }
+  .logo-small {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-large {
+    display: none;
+  }
+  .logo-small {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

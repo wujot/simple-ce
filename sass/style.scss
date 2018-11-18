@@ -1,0 +1,85 @@
+/* Font variables */
+$fontOpen: 'Open Sans', sans-serif;
+$fontRoboto: 'Roboto Condensed', sans-serif;
+$fontChango: 'Chango', cursive;
+
+/* Color variables */
+$white: #fff;
+$red: #FF0000;
+$lightgrey: #696969;
+
+/* Transition variables */
+$transition: all .4s ease;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;	
+	font-family: $fontOpen;
+}
+
+a {
+	decoration-text: none;
+}
+
+section {
+	padding: 40px 0;	
+}
+
+.jumbotron {
+	margin: 40px auto;
+	width: 100%;
+	height: 100vh;
+	padding-top: 40px;
+	background: url("../images/iStock-847375436.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.navbar {
+	border: none;
+	.logo-large, .logo-small {
+
+		padding: 10px;
+		h4 {
+			font-weight: bold; 
+			font-size: 20px; 
+			border-bottom: 1px solid;
+		}
+		p {
+			margin: 0;
+			font-size: 12px;
+		}
+	}
+}
+
+
+.button {
+	padding-top: 20px;
+	line-height: 30px;
+	color: $lightgrey;
+	&:hover {
+		background-color: $red;
+		transition: $transition;
+		color: $white;
+	}
+}
+
+@media (min-width: 768px) {
+	.logo-large {
+		display: block;
+	}
+	.logo-small {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.logo-large {
+		display: none;
+	}
+	.logo-small {
+		display: block;
+	}
+}
