@@ -66,6 +66,20 @@ section {
 	}
 }
 
+.line {
+	margin: 20px auto;
+	max-width: 300px;
+	height: 2px;
+	background-color: $red;
+}
+
+.why {
+	.cell {
+		padding: 40px 0;
+	}
+}
+
+
 @media (min-width: 768px) {
 	.logo-large {
 		display: block;

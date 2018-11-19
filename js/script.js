@@ -2,28 +2,28 @@ $(document).ready(function(){
 		
 		$("#home").on({
 			   mouseenter: function(){
-			    $('#homeIcon').attr('src','../../images/homeHover.png');
+			    $('#homeIcon').attr('src','images/homeHover.png');
 			  },
 			  mouseleave: function(){
-			    $('#homeIcon').attr('src','../../images/home.png');
+			    $('#homeIcon').attr('src','images/home.png');
 			  }
 			  });
 		
 		$("#course").on({
 			   mouseenter: function(){
-			    $('#education').attr('src','../../images/educationHover.png');
+			    $('#education').attr('src','images/educationHover.png');
 			  },
 			  mouseleave: function(){
-			    $('#education').attr('src','../../images/education.png');
+			    $('#education').attr('src','images/education.png');
 			  }
 			  });
 		
 		$("#contact").on({
 			   mouseenter: function(){
-			    $('#letter').attr('src','../../images/letterHover.png');
+			    $('#letter').attr('src','images/letterHover.png');
 			  },
 			  mouseleave: function(){
-			    $('#letter').attr('src','../../images/letter.png');
+			    $('#letter').attr('src','images/letter.png');
 			  }
 			  });
 		

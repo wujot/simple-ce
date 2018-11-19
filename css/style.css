@@ -58,6 +58,17 @@ section {
   color: #fff;
 }
 
+.line {
+  margin: 20px auto;
+  max-width: 300px;
+  height: 2px;
+  background-color: #FF0000;
+}
+
+.why .cell {
+  padding: 40px 0;
+}
+
 @media (min-width: 768px) {
   .logo-large {
     display: block;
