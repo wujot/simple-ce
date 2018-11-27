@@ -10,6 +10,8 @@
         <!-- Custom css-->
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
 	</head>
 	<body>
 		<!-- Navigation Bar -->
@@ -74,13 +76,13 @@
 			    			<p>Home<p>
 			    		</div>
 			    	</a>
-			    	<a id="course" href="#">
+			    	<a id="course" href="kursy.html">
 			    		<div class="col-sm-3 button">
 			    			<img class="menuIcon" id="education" alt="kursy trzebnica angielski" src="images/education.png">
 			    			<p>Kursy</p>
 			    		</div>
 			    	</a>
-			    	<a id="contact" href="#">
+			    	<a id="contact" href="#kontakt">
 			    		<div class="col-sm-3 button">
 			    			<img class="menuIcon" id="letter" alt="kursy trzebnica angielski" src="images/letter.png">
 			    			<p>Kontakt</p>
@@ -146,6 +148,105 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- Section -->
+		<section class="contact text-center" id="kontakt">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h1>Skontaktuj się z nami</h1>
+						<div class="line">
+						</div>
+						<h3>
+							Wybór  kursu językowego , to ważna decyzja. Od jej trafności zależy tempo postepów w
+							nauce, niegasnąca motywacja i łatwość pokonywania kolejnych etapów nauki języka. 
+							<br>
+							<br>
+							Podejmując decyzję o nauce języka warto rozważyć, czy zależy nam na uczestnictwie w
+							kursie języka ogólnego , czy też chcemy przygotowywać się do podsumowania etapu nauki
+							egzaminem Cambridge English  w czym pomoże nam kurs egzaminacyjny . Wiele zależy też
+							od tego, czy chcemy uczestniczyć w grupowym kursie językowym, czy lepszy będzie kurs
+							językowy indywidualny . 
+							<br>
+							<br>
+							Zapraszamy do kontaktu w celu ustalenia szczegółów.
+						</h3>
+					</div>
+				</div>
+				<div class="row space">
+					<div class="col-sm-6">
+						<h3>Napisz do nas</h3>
+						<!-- contact form -->
+						<div align="center">
+			    			<form style="padding: 20px;" id="contactForm" action="#" method="post" th:action="@{/sendMessage}" th:object="${form}">
+			    				<div class="form-group">
+							    	<input style="padding: 20px;" type="text" class="form-control" id="messageName" placeholder="IMIE" th:field="*{name}" required>
+							    		<div id="nameError" class="valError"></div>
+							  	</div>
+								<div class="form-group">
+							    	<input type="email" class="form-control" id="messageEmail" placeholder="EMAIL" th:field="*{email}" required>
+							  			<div id="emailError" class="valError"></div>
+							  	</div>
+							  	<div class="form-group">
+							    	<input type="text" class="form-control" id="messageTitle" placeholder="TYTUL" th:field="*{title}" required>
+							  			<div id="emailError" class="valError"></div>
+							  	</div>
+								<div class="form-group">
+							    	<input type="text" class="form-control" id="messageNumber" placeholder="TELEFON" th:field="*{phoneNumber}" required>
+							  			<div id="phoneError" class="valError"></div>
+							  	</div>
+							  	<div class="form-group">
+								    <textarea class="form-control" id="messageContent" rows="6" placeholder="WIADOMOSC" th:field="*{message}" required></textarea>
+										<div id="messageError" class="valError"></div>
+								</div>
+							  <button type="submit" class="btn ">WYSLIJ WIADOMOSC</button>
+							</form>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<h3>Lokalizacja</h3>
+						<h4>Adres<h4>
+						
+								<p>Odwiedź nas w siedzibie szkoły:<br>
+								ul. Św.Jadwigi 7, 55-100 Trzebnica <br><br>
+						
+								Napisz do nas: <br>
+								s.centrumedu@gmail.com<br>
+								</p>
+								
+					
+							<h4>Zadzwoń</h4>
+							<div align="center">
+								<p>
+								503 398 620 <br>
+								</p>
+							</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section Map -->
+		<section class="map">
+			<!-- Add Google Maps -->
+			<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ul.%20%C5%9Aw.Jadwigi%207%2C%2055-100%20Trzebnica&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de">webagentur</a></div><style>.mapouter{text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div>
+
+		</section>
+
+		<!-- Footer -->
+		<footer class="text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<h4>&copy; Copyright 2018 Centrum Edukacyjne Simple</h4>
+					</div>
+					<div class="col-sm-6">
+						<h4>Projekt & Wykonanie <a href="http://e-smartapp.pl">e-SmartApp</a></h4>
+					</div>
+				</div>
+			</div>
+		</footer>
+
 		
 		<!-- JQuery and Bootstrap JS libraries -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

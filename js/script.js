@@ -26,6 +26,33 @@ $(document).ready(function(){
 			    $('#letter').attr('src','images/letter.png');
 			  }
 			  });
+
+		$('#maluchy').on({
+			   mouseenter: function(){
+			    $('#icon').attr('src','images/teddyHover.png');
+			  },
+			  mouseleave: function(){
+			    $('#icon').attr('src','images/teddy.png');
+			  }
+			  });
+		
+		$('#dzieci').on({
+			   mouseenter: function(){
+			    $('#iconD').attr('src','images/abc-blockHover.png');
+			  },
+			  mouseleave: function(){
+			    $('#iconD').attr('src','images/abc-block.png');
+			  }
+			  });
+		
+		$('#szkolne').on({
+			   mouseenter: function(){
+			    $('#iconS').attr('src','images/childrenHover.png');
+			  },
+			  mouseleave: function(){
+			    $('#iconS').attr('src','images/children.png');
+			  }
+			  });
 		
 		// Add smooth scrolling to all links
 		  $("#contact").on('click', function(event) {

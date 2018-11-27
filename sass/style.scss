@@ -2,6 +2,7 @@
 $fontOpen: 'Open Sans', sans-serif;
 $fontRoboto: 'Roboto Condensed', sans-serif;
 $fontChango: 'Chango', cursive;
+$fontRaleway: 'Raleway', sans-serif;
 
 /* Color variables */
 $white: #fff;
@@ -17,14 +18,25 @@ $transition: all .4s ease;
 
 body {
 	margin: 0;	
-	font-family: $fontOpen;
+	font-family: $fontRaleway;
+}
+
+h2, h3, h4 {
+	line-height: 40px;
 }
 
 a {
 	decoration-text: none;
 }
 
-section {
+.line {
+	margin: 20px auto;
+	max-width: 400px;
+	height: 2px;
+	background-color: $red;
+}
+
+section, .space {
 	padding: 40px 0;	
 }
 
@@ -54,6 +66,13 @@ section {
 	}
 }
 
+section {
+	padding: 40px 0;
+	h3, h2 {
+		margin: 20px auto;
+		width: 80%;
+	}
+} 
 
 .button {
 	padding-top: 20px;
@@ -66,19 +85,44 @@ section {
 	}
 }
 
-.line {
-	margin: 20px auto;
-	max-width: 300px;
-	height: 2px;
-	background-color: $red;
-}
-
 .why {
 	.cell {
 		padding: 40px 0;
 	}
 }
 
+.contact {
+	
+	button {
+		background-color: $white;
+		color: $red;
+		border: 2px solid $red;
+		transition: $transition;
+		font-weight: bold;
+		&:hover {
+			background-color: $red;
+			color: $white;
+		}
+	}
+}
+
+footer {
+	background-color: $red;
+	h4 {
+		line-height: 120px;
+		color: $white;
+	}
+	a {
+		color: $white;
+		transition: $transition;
+		&:hover {
+			font-weight: bold;
+			text-decoration: none;
+			color: $white;
+			transform: scale(1.2);
+		}
+	}
+}
 
 @media (min-width: 768px) {
 	.logo-large {
@@ -97,3 +141,28 @@ section {
 		display: block;
 	}
 }
+
+.courses {
+	margin: 50px 0;
+	.coursePanel{
+	color: #696969;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	height: 300px;
+		-webkit-transition-duration: 0.6s; /* Safari */
+            transition-duration: 0.6s;
+}
+
+.coursePanel:hover {
+	background-color: #FF0000;
+	color: white;
+
+}
+
+
+
+.coursePanel h2:hover {
+	color: white;
+}
+}
+
