@@ -178,25 +178,25 @@
 						<h3>Napisz do nas</h3>
 						<!-- contact form -->
 						<div align="center">
-			    			<form style="padding: 20px;" id="contactForm" action="#" method="post" th:action="@{/sendMessage}" th:object="${form}">
+			    			<form style="padding: 20px;" id="contactForm" action="https://formspree.io/s.centrumedu@gmail.com" method="post">
 			    				<div class="form-group">
-							    	<input style="padding: 20px;" type="text" class="form-control" id="messageName" placeholder="IMIE" th:field="*{name}" required>
+							    	<input style="padding: 20px;" type="text" class="form-control" id="messageName" placeholder="IMIE" name="name" required minlength="4">
 							    		<div id="nameError" class="valError"></div>
 							  	</div>
 								<div class="form-group">
-							    	<input type="email" class="form-control" id="messageEmail" placeholder="EMAIL" th:field="*{email}" required>
+							    	<input type="email" class="form-control" id="messageEmail" placeholder="EMAIL" name="email" required>
 							  			<div id="emailError" class="valError"></div>
 							  	</div>
 							  	<div class="form-group">
-							    	<input type="text" class="form-control" id="messageTitle" placeholder="TYTUL" th:field="*{title}" required>
+							    	<input type="text" class="form-control" id="messageTitle" placeholder="TYTUL" name="title" required minlength="4">
 							  			<div id="emailError" class="valError"></div>
 							  	</div>
 								<div class="form-group">
-							    	<input type="text" class="form-control" id="messageNumber" placeholder="TELEFON" th:field="*{phoneNumber}" required>
+							    	<input type="number" class="form-control" id="messageNumber" placeholder="TELEFON" name="number" required minlength="6">
 							  			<div id="phoneError" class="valError"></div>
 							  	</div>
 							  	<div class="form-group">
-								    <textarea class="form-control" id="messageContent" rows="6" placeholder="WIADOMOSC" th:field="*{message}" required></textarea>
+								    <textarea class="form-control" id="messageContent" rows="6" placeholder="WIADOMOSC" name="message" required minlength="4"></textarea>
 										<div id="messageError" class="valError"></div>
 								</div>
 							  <button type="submit" class="btn ">WYSLIJ WIADOMOSC</button>

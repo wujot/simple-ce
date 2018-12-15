@@ -67,10 +67,20 @@ section, .space {
 }
 
 section {
+	margin-top: 100px;
 	padding: 40px 0;
+	h1 {
+		padding: 30px;
+	}
 	h3, h2 {
 		margin: 20px auto;
 		width: 80%;
+	}
+	.text-card {
+		padding: 40px 0;
+	}
+	h4 {
+		padding: 20px;
 	}
 } 
 
